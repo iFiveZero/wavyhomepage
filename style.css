@@ -73,3 +73,52 @@ section {
     background-color: #0f0f10;
     z-index: -1;
 }
+
+.custom-shape-divider-top-1685116587 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1685116587 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 223px;
+}
+
+.custom-shape-divider-top-1685116587 .shape-fill {
+    fill: #1F1515;
+}
+
+.spacer {
+    aspect-ratio: 900/600;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url(./layered-waves-haikei.svg);
+}
+
+.layer2 {
+    background-image: url(./layered-waves-haikei.svg);
+}
+
+.flip {
+    transform: rotate(180deg);
+}
+
+#g_blob2 {
+    visibility: hidden;
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+}
