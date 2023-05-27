@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js"></script>
+
+    </head>
+    <body>
+
+       <section class="blue">
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+        <div class="curve"></div>
+       </section>
+       <section class="bubble">
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       </section>
+       <section class="dark">
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+        <div class="custom-shape-divider-top-1685116587">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+       </section>
+       <section class="red">
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       </section>
+       <section>
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       <div class="spacer layer1"></div>
+       </section>
+       <div class="spacer layer2 flip"></div>
+       <section class="pink">
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       </section>
+       <section class="blob-motion">
+        <svg id="visual" viewBox="0 0 900 600" width="900" height="600" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+            <g id="g_blob1" transform="translate(433.9629660521885 300.1628306163527)">
+                <path id="blob1"
+                    d="M177.3 -156.4C227.3 -127.3 263.6 -63.6 263.8 0.1C263.9 63.9 227.8 127.8 177.8 156.9C127.8 186.1 63.9 180.5 14.3 166.3C-35.4 152 -70.7 129 -118.7 99.9C-166.7 70.7 -227.4 35.4 -231.5 -4.1C-235.6 -43.6 -183.2 -87.2 -135.2 -116.4C-87.2 -145.5 -43.6 -160.3 10 -170.3C63.6 -180.3 127.3 -185.6 177.3 -156.4"
+                    fill="#BB004B"></path>
+            </g>
+            <g id="g_blob2" transform="translate(433.6784380994693 275.57276470539085)">
+                <path id="blob2"
+                    d="M116.2 -108.2C161.7 -70.7 217.4 -35.4 219.6 2.2C221.8 39.8 170.7 79.7 125.2 129.7C79.7 179.7 39.8 239.8 -15.3 255.2C-70.5 270.5 -140.9 240.9 -169.3 190.9C-197.6 140.9 -183.8 70.5 -182.7 1.1C-181.7 -68.4 -193.4 -136.7 -165 -174.2C-136.7 -211.7 -68.4 -218.4 -16.5 -201.9C35.4 -185.4 70.7 -145.7 116.2 -108.2"
+                    fill="#BB004B"></path>
+            </g>
+        </svg>
+    </section>
+        <script>
+            const tween = KUTE.fromTo(
+                '#blob1',
+                {path: '#blob1'},
+                {path: '#blob2'},
+                {repeat: 999, duration:3000, yoyo: true}
+            )
+            tween.start()
+        </script>
+       <div class="spacer layer2"></div>
+       <section>
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       </section>
+       <section>
+        <h1>Curves</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, iste sapiente sed explicabo quae eveniet error expedita accusantium? Neque delectus facilis assumenda perferendis quod id enim praesentium natus voluptas cum!</p>
+       </section>
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="" async defer></script>
+    </body>
+</html>
