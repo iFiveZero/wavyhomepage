@@ -2,13 +2,13 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>iFiveZero Portfolio</title>
-        <meta name="description" content="">
+        <meta name="description" content="iFiveZero Portfolio is a website that showcases the work of iFiveZero, a web development company.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -16,32 +16,42 @@
         <nav class="menu">
             <ul>
               <li><a href="#">Home</a></li>
+              <li><a href="#">Projects</a>
+                <ul>
+                    <li class="crumb"><a href="#">Project 1</a></li>
+                    <li class="crumb"><a href="#">Project 2</a></li>
+                </ul>
+              </li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
             </ul>
           </nav>
-         <h1>iFiveZero Portfolio Page</h1>
-            <div class="wrapper">
-                <div class="box a">A
-                    <img class="image" src="./html.png" alt="HTML Icon">
-                </div>
-                <div class="box b">B
-                    <img class="image" src="./css.png" alt="CSS Icon">
-                </div>
-                <div class="box c">C
-                    <img class="image" src="./js.png" alt="JavaScript Icon">
-                </div>
-                <div class="box d">D
-                    <img class="image" src="./python.png" alt="Python Icon">
-                </div>
+          <h1>iFiveZero Portfolio Page</h1>
+          <div class="wrapper">
+            <div class="box a">A
+                <img class="image" src="./html.png" alt="HTML Icon">
+                <strong>+</strong>
+                <img class="image" src="./css.png" alt="CSS Icon">
             </div>
-            <footer>
-                <p>© 2018 Gandalf</p>
-            </footer>
+            <div class="box b">B
+                 <img class="image" src="./js.png" alt="CSS Icon">
+            </div>
+            <div class="box c">C
+                <img class="image" src="./python.png" alt="JavaScript Icon">
+            </div>
+            <div class="box d">D
+                <img class="image" src="./puppeteer.png" alt="Python Icon">
+                <strong>+</strong>
+                <img class="image" src="./lambda.png" alt="CSS Icon">
+            </div>
+          </div>
+          <footer>
+            <p>&#169; 2023 Gandalf</p>
+          </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="" async defer></script>
+        <script src="app.js" async defer></script>
     </body>
 </html>
