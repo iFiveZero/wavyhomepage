@@ -1,7 +1,7 @@
 /* 1) Placing the menu in the top right corner of the screen */
 ul {
   display:flex;
-  gap: 20px;
+  gap: 4vmin;
   justify-content: flex-end; 
   border-style: solid red 10px;
 }
@@ -10,10 +10,19 @@ ul ul {
   flex-direction: row;
 }
 
-.image {
+.wrapper {
   display: flex;
-  width: 40vmin;
-  height: 50vmin
+  flex-direction: row;
+  justify-content: center;
+  gap: 4vmin;
+  border: solid red 10px;
+}
+
+.image {
+  width: 10vmin;
+  height: 15vmin;
+  object-fit:scale-down;
+  object-position: center;
 }
 
 /*
