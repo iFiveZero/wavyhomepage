@@ -1,4 +1,20 @@
 /* 1) Placing the menu in the top right corner of the screen */
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  border: solid green 10px;
+}
+
 .menu {
   display:flex;
   flex-direction: row;
@@ -6,12 +22,14 @@
   justify-content: flex-end; 
   border: solid blue 10px;
   padding: 1vmin;
+  position: fixed; top: 0; right: 0;
 }
 
 ul {
   display:flex;
   flex-direction: row;
   gap: 4vmin;
+  list-style-type: none;
 }
 
 ul ul {
@@ -25,6 +43,7 @@ ul ul {
   flex-direction: row;
   justify-content: center;
   gap: 4vmin;
+  position: absolute; left: 25%; top: 50%; transform: translate(0%, -50%);
   border: solid red 10px;
 }
 
@@ -33,6 +52,11 @@ ul ul {
   height: 15vmin;
   object-fit:scale-down;
   object-position: center;
+}
+
+footer {
+  border: solid wheat 10px;
+  margin-top: 4vmin;
 }
 
 /*

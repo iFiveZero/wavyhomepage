@@ -11,6 +11,9 @@
         <meta name="description" content="iFiveZero Portfolio is a website that showcases the work of iFiveZero, a web development company.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <nav class="menu">
@@ -27,26 +30,28 @@
             </ul>
           </nav>
           <h1>iFiveZero Portfolio Page</h1>
-          <div class="wrapper">
+          <div class="wrapper" id="image-track" data-mouse-down-at="0">
             <div class="box a">A
-                <img class="image" src="./html.png" alt="HTML Icon">
-                <strong>+</strong>
-                <img class="image" src="./css.png" alt="CSS Icon">
+              <img class="image" src="./html.png" alt="HTML Icon"  draggable="false">
             </div>
             <div class="box b">B
-                 <img class="image" src="./js.png" alt="CSS Icon">
+              <img class="image" src="./css.png" alt="CSS Icon" draggable="false">
             </div>
             <div class="box c">C
-                <img class="image" src="./python.png" alt="JavaScript Icon">
+                 <img class="image" src="./js.png" alt="JavaScript Icon" draggable="false">
             </div>
             <div class="box d">D
-                <img class="image" src="./puppeteer.png" alt="Python Icon">
-                <strong>+</strong>
-                <img class="image" src="./lambda.png" alt="CSS Icon">
+                <img class="image" src="./python.png" alt="Python Icon" draggable="false">
             </div>
+            <div class="box e">E
+                <img class="image" src="./puppeteer.png" alt="Puppeter Icon" draggable="false">
+            </div>
+            <div class="box f">F
+              <img class="image" src="./lambda.png" alt="AWS Lambda Icon" draggable="false">
+          </div>
           </div>
           <footer>
-            <p>&#169; 2023 Gandalf</p>
+            <p>&#169; 2023 iFiveZero</p>
           </footer>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
