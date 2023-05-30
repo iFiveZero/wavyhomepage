@@ -15,28 +15,64 @@ h1 {
   border: solid green 10px;
 }
 
-.menu {
-  display:flex;
-  flex-direction: row;
-  gap: 4vmin;
-  justify-content: flex-end; 
-  border: solid blue 10px;
-  padding: 1vmin;
-  position: fixed; top: 0; right: 0;
+/*  Navigation Section */
+nav {
+  overflow: hidden;
+  background-color: #333;
 }
 
-ul {
-  display:flex;
-  flex-direction: row;
-  gap: 4vmin;
-  list-style-type: none;
+nav .links {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-ul ul {
-  display:flex;
-  flex-direction: column;
-  gap: .5vmin;
+.subnav {
+  float: left;
+  overflow: hidden;
 }
+
+.subnav .sub-btn {
+  /* font-size: 16px; */
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: rgb(0, 109, 67);
+  margin: 0;
+}
+
+nav .links:hover,
+.subnav:hover .sub-btn {
+   background-color: rgb(101, 219, 255);
+   color: black;
+   font-weight: bolder;
+}
+.sub-content {
+   display: none;
+   position: absolute;
+   left: 0;
+   background-color: rgb(0, 156, 83);
+   width: 100%;
+   z-index: 1;
+}
+.sub-content a {
+   float: left;
+   color: white;
+   text-decoration: none;
+}
+.sub-content a:hover {
+   background-color: #eee;
+   color: black;
+}
+.subnav:hover .sub-content {
+   display: block;
+}
+
+/* Slider Section */
 
 #image-track {
   display: flex;
@@ -47,16 +83,6 @@ ul ul {
   transform: translate(0%, -50%); 
   user-select: none; /* -- Prevent image highlighting -- */
 }
-/*
-.wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 4vmin;
-  position: absolute; left: 25%; top: 50%; transform: translate(0%, -50%);
-  border: solid red 10px;
-}
-*/
 
 .image {
   width: 10vmin;
@@ -65,86 +91,8 @@ ul ul {
   object-position: center;
 }
 
+/* Footer section */
 footer {
   border: solid wheat 10px;
   margin-top: 4vmin;
 }
-
-/*
-ul {
-  position: fixed; 
-  top: 0;
-  right: 0;
-  width: calc(33.33% - 20px); 
-  display: flex;
-  justify-content: flex-end; 
-  list-style: none;
-} */
-
-/* Displaying the nested list horizontally */
-/*
-ul ul {
-  flex-direction: row;
-}
-*/
-
-/* 2) Indicating the menu item when hovered or clicked */
-/*
-li:hover > a {
-  background-color: #f0f0f0;
-}
-
-li:focus > a {
-  background-color: #f0f0f0;
-}
-*/
-
-/* 3) Showing the nested list on hover */
-/*
-li:hover ul {
-  display: flex;
-  flex-direction: column;
-}
-
-ul ul {
-  display: none;
-}
-*/
-/* Additional styling for the nested list */
-/*
-ul ul li {
-  position: relative;
-}
-*/
-/* Styling for the "crumb" class */
-/*
-.crumb:hover > a {
-  background-color: #f0f0f0;
-}
-
-*/
-
-/*
-body {
-  margin: 40px;
-}
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
-}
-
-.box {
-  background-color: #444;
-  color: #fff;
-  border-radius: 5px;
-  padding: 20px;
-  font-size: 150%;
-}
-  
-  
-  
-  */
