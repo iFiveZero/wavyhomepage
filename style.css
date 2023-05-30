@@ -1,8 +1,7 @@
 /* 1) Placing the menu in the top right corner of the screen */
+
 body {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
+  background-color: black; 
   margin: 0rem;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +15,7 @@ h1 {
 }
 
 /*  Navigation Section */
+
 nav {
   overflow: hidden;
   background-color: #333;
@@ -79,8 +79,8 @@ nav .links:hover,
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(0%, -50%); 
-  user-select: none; /* -- Prevent image highlighting -- */
+  transform: translate(0%, -50%);
+  user-select: none; 
 }
 
 .image {
@@ -92,6 +92,40 @@ nav .links:hover,
 
 /* Footer section */
 footer {
-  border: solid wheat 10px;
+  /* border: solid wheat 10px; */
   margin-top: 4vmin;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+footer p {
+  border: solid purple 1px;
+  text-align: center;
+  color: white;
+}
+
+
+/* Waves at bottom of Page */
+
+.custom-shape-divider-bottom-1685471865 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1685471865 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 177px;
+}
+
+.custom-shape-divider-bottom-1685471865 .shape-fill {
+  fill: #006D57;
 }
