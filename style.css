@@ -1,7 +1,7 @@
 /* 1) Placing the menu in the top right corner of the screen */
 
 body {
-  background-color: black; 
+  background-color: rgba(0,0,0,0.5);
   margin: 0rem;
   overflow: hidden;
   font-family: 'Open Sans', sans-serif;
@@ -84,9 +84,9 @@ nav .links:hover,
 }
 
 .image {
-  width: 10vmin;
-  height: 15vmin;
-  object-fit:scale-down;
+  width: 40vmin;
+  height: 45vmin;
+  object-fit:contain;
   object-position: center;
 }
 
@@ -101,7 +101,7 @@ footer {
 }
 
 footer p {
-  border: solid purple 1px;
+  /*border: solid purple 1px; */
   text-align: center;
   color: white;
 }
@@ -117,6 +117,7 @@ footer p {
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
+  z-index: -1;
 }
 
 .custom-shape-divider-bottom-1685471865 svg {
